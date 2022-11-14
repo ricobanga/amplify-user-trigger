@@ -2,7 +2,7 @@
 // const userPoolId = process.env.AUTH_<WHATEVER>_USERPOOLID;
 // const appsyncUrl = process.env.API_<WHATEVER>_GRAPHQLAPIENDPOINTOUTPUT;
 
-const {CognitoIdentityServiceProvider} = require('aws-sdk');
+const aws = require('aws-sdk');
 const cognitoIdentityServiceProvider = new CognitoIdentityServiceProvider();
 const {request} = require('/opt/appSyncRequest')
 
